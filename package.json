@@ -219,7 +219,7 @@
                 },
                 {
                     "command": "tlaplus.model.check.run",
-                    "when": "editorLangId == tlaplus || editorLangId == tlaplus_cfg"
+                    "when": "editorLangId == tlaplus || editorLangId == tlaplus_cfg || tlaplus.tlc.canRunAgain"
                 },
                 {
                     "command": "tlaplus.model.check.runAgain",
@@ -402,6 +402,7 @@
     "dependencies": {
         "await-notify": "^1.0.1",
         "moment": "^2.24.0",
+        "neverthrow": "^4.2.1",
         "vscode-debugadapter": "^1.42.1"
     }
 }
